@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import RadioButton from './radioButton';
+import './signIn.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,14 +15,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function SignIn() {
-  const classes = useStyles();
+  const {root} = useStyles();
   return (
     <Container>
       <h1>הרשמה</h1>
       <h3>אנו שמחים שבחרת להצטרף אלינו</h3>
       <div>אנא הכנס/י את פרטיך</div>
       <br /><br />
-      <form className={classes.root} noValidate autoComplete="off">
+      <form className='form' noValidate autoComplete="off">
         <TextField id="firstName" label="First name" variant="outlined" /><br />
         <TextField id="lastName" label="Last Name" variant="outlined" /><br />
         <TextField id="email" label="Email" variant="outlined" /><br />
