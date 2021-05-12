@@ -27,7 +27,7 @@ function SignIn() {
         <TextField id="email" label="Email" variant="outlined" /><br />
         <TextField id="phone" label="Phone" variant="outlined" /><br />
         <div>
-          <RadioButton arr='[aaa]'></RadioButton>
+          <RadioButton arr={["SMS","Email"]}></RadioButton>
         </div>
       </form>
     </Container>
