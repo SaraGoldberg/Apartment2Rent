@@ -5,7 +5,6 @@ import FormControl from '@material-ui/core/FormControl';
 
 export default function RadioButton(props) {
   const { arr } = props;
-  debugger
   return (
     <FormControl component="fieldset">
       <RadioGroup aria-label="radios" name="customized-radios">
