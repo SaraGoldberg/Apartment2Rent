@@ -70,7 +70,7 @@
 //       <FormLabel component="legend">Gender</FormLabel>
 //       <RadioGroup defaultValue="female" aria-label="gender" name="customized-radios">
 //         <FormControlLabel value="female" control={<StyledRadio />} label="Female" />
-        
+
 //         <FormControlLabel value="male" control={<StyledRadio />} label="Male" />
 //         <FormControlLabel
 //           value="disabled"
@@ -84,10 +84,13 @@
 // }
 
 import React from 'react'
+import { Radio, RadioGroup } from '@material-ui/core';
 
-export default function RadioButton(props){
+export default function RadioButton(props) {
   const { arr } = props;
-  return arr.map(a=>{
-    return <div>{a}</div>
+  debugger
+  return arr.map(a => {
+    return <Radio radioGroup='a' value={a}></Radio>
   })
+
 }
