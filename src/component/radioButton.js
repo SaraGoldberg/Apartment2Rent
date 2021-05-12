@@ -86,7 +86,8 @@
 import React from 'react'
 
 export default function RadioButton(props){
-  return props.arr.map(a=>{
+  const { arr } = props;
+  return arr.map(a=>{
     return <div>{a}</div>
   })
 }

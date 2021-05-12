@@ -14,9 +14,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function SignIn() {
-  //   const [count, setCount] = useState(0);
   const classes = useStyles();
-
   return (
     <Container>
       <h1>הרשמה</h1>
@@ -29,7 +27,7 @@ function SignIn() {
         <TextField id="email" label="Email" variant="outlined" /><br />
         <TextField id="phone" label="Phone" variant="outlined" /><br />
         <div>
-          <RadioButton arr='aaa'></RadioButton>
+          <RadioButton arr='[aaa]'></RadioButton>
         </div>
       </form>
     </Container>
