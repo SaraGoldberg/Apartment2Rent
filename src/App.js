@@ -1,9 +1,9 @@
-import React, {useEffect}from 'react';
+import React from 'react';
 import SignIn from './component/signIn';
-import Home from './home';
+import Home from './component/home';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from './component/login';
-import SimpleAccordion from './component/simpleAccordion';
+import CheckOut from './component/AddAdvertisement/checkOut';
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
           <SignIn />
         </Route>
         <Route path='/add'>
-          <SimpleAccordion/>
+          <CheckOut/>
         </Route>
         <Route path='/login'>
           <Login />
